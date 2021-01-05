@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<div id="result"></div>
+<script>
+function clickCounter(){
+if(typeof(Storage) !== "undefined"){
+if(sessionStorage.clickcount){
+sessionStorage.clickcount=Number(sessionStorage.clickcount)+1;
+}
+else{
+sessionStorage.clickcount=1;
+}
+document.getElementById("result").innerHTML="click count is" +sessionStorage.clickcount;
+}
+else
+{
+document.getElementById("result").innerHTML="browser does not support";
+}
+}
+</script>
+</head>
+
+
+<body>
+<p><button onclick="clickCounter()" type="button">CLICKME</button></p>
+<div id="result"></div>
+</body>
+</html>
+

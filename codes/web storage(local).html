@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div id="result"></div>
+<script>
+if(typeof(storage) !== "undefined"){
+localStorage.setItem("lastname", "sumith");
+document.getElementById("result").innerHTML=localStorage.getItem("lastname");
+}
+else{
+document.getElementById("result").innerHtml="browser does not support";
+}
+
+</script>
+
+
+</body>
+</html>
+
