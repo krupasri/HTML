@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            function confirm(){
+                event.preventDefault;
+                var uname_value=document.getElementById("uname").value;
+                var pwd_value=document.getElementById("pwd").value;
+                alert("login success!");
+            }
+        </script>
+
+    </head>
+    <body>
+        <form>
+        
+        <label>USERNAME:</label>&nbsp;<input type="text" id="uname"><br><br>
+        <label>PASSWORD:</label>&nbsp;<input type="password" id="pwd"><br><br>
+        <button onclick="confirm()">SUBMIT</button>
+        </form>
+    </body>
+</html>

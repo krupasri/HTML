@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script>
+        event.preventDefault;
+function add(){
+    var fnum=document.getElementById("fnum").value;
+    var snum=document.getElementById("snum").value;
+    var result=fnum+snum;
+
+    var result=document.getElementById("result").value=result;
+}
+    </script>
+</head>
+
+<body><br><br>
+    
+    <form>
+        <div class="container p-3 my-3 bg-dark text-white">
+
+        <h4 style="margin-left: 40%;"><u>CALCULATOR</u></h4><br><br>
+        <label style="margin-left:25%">Enter your first number:</label>&nbsp;<input type="number" id="fnum"
+            placeholder="First number"><br><br>
+        <label style="margin-left: 25%;">Enter your second number:</label>&nbsp;<input type="number" id="snum"
+            placeholder="Second number"><br><br>
+            <label style="margin-left:25%">RESULT:</label><input type="text" id="result"><br><br>
+        <button style="margin-left: 25%;" onclick="add()">ADDITION</button>&nbsp;&nbsp;<button style="margin-right:20%"
+            onclick="sub()">SUBSTRACTION</button>
+    </div>
+    </form>
+</body>
+
+</html>

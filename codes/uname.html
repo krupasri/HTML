@@ -1,0 +1,39 @@
+<html>
+
+<head>
+
+    <script>
+        function confirm() {
+            var dbname = "ravi";
+            var dbpwd = "ravi123"
+            var fname = document.getElementById("fname").value;
+
+            var pass = document.getElementById("pass").value;
+
+            if (fname == dbname & pass == dbpwd) {
+
+
+                alert("Login successfull! ");
+
+            }
+            else {
+                alert("Login failed!");
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="form">
+        <label for="fanme">Full Name:</label><br>
+        <input type="text" placeholder="Enter Your Name " id="fname" value="" name="fname">
+        <br><label for="password">Password:</label> <br>
+        <input type="password" placeholder="Enter Password" id="pass" value="" name="pass">
+        <br>
+        <br>
+        <button onclick="confirm()">SUBMIT</button>
+    </div>
+</body>
+
+</html>

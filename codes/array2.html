@@ -1,0 +1,23 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <label>USERNAME:</label><input type="text" id="uname" ><br><br>
+        <label>PASSWORD:</label><input type="password" id="pwd" ><br><br>
+        <button onclick="getDetails()">SUBMIT</button>
+        <script>
+        function getDetails(){
+            var uname = document.getElementById("uname").value
+            var pwd = document.getElementById("pwd").value
+            var obj={
+                uname: uname,
+                pwd: pwd
+            }
+            alert("Username is:"+obj.uname );
+            alert("Password is:"+obj.pwd );
+
+            }
+        </script>
+    </body>
+</html>
+
